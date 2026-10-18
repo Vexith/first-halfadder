@@ -15,7 +15,7 @@ module tb ();
 
    initial begin
       $dumpfile("waves.vcd");
-	   $dumpvars(0, tb_bitadder);
+	   $dumpvars(0, tb);
 	
 	   // sum = 0 and carry = 0, so (0 + 0  = 0)	
 	   a = 0; b = 0;
