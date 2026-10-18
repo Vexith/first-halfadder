@@ -12,28 +12,5 @@ module tb ();
    wire cry;
 
    bitadder uut (.a(a), .b(b ), .sum(sum), .cry(cry));
-
-   initial begin
-      $dumpfile("waves.vcd");
-	   $dumpvars(0, tb);
-	
-	   // sum = 0 and carry = 0, so (0 + 0  = 0)	
-	   a = 0; b = 0;
-	   #10;
-
-	   // sum = 1 and carry = 0, so 0 + 1 = 1
-	   a = 0; b = 1;
-	   #10;
-
-	   // sum = 1 and carry = 0, so 1 + 0 = 1
-	   a = 1; b = 0;
-	   #10;
-
-	   // 1 + 1 = 2 in binary (sum = 0, carry = 1)
-	   a = 1; b = 1;
-	   #10;
-
-	   $finish;
-   end
    
 endmodule
