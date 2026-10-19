@@ -6,4 +6,4 @@ module tt_um_wrapper (input wire [7:0] ui_in, output wire[7:0] uo_out, input wir
   tt_um_bitadder uut (.a (ui_in[0]), .b (ui_in[1]), .sum (uo_out[0]), .cry (uo_out[1]));
 
   assign uo_out[7:2] = 6'b0; // short the 6 bits remaining to GND
-end module
+endmodule
