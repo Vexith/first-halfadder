@@ -11,6 +11,6 @@ module tb ();
    wire sum;
    wire cry;
 
-   bitadder uut (.a(a), .b(b ), .sum(sum), .cry(cry));
+   tt_um_bitadder uut (.a(a), .b(b ), .sum(sum), .cry(cry));
    
 endmodule
